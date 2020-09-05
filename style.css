@@ -1,27 +1,24 @@
+/***** Global Styling ******/
+
 html {
     height: 100%;
 }
 
 body {
-    background-color: #eee;
+    background-color: white;
     font-family: 'Lato', sans-serif;
 }
 
-.grid {
-    display: flex;
-}
-
 .btn {
-    padding: 0 20px;
-    height: 40px;
-    font-size: 1em;
+    padding: 0 15px;
+    height: 2em;
+    font-size: .9em;
     font-weight: 700;
     color: rgb(75, 75, 75);
     text-transform: uppercase;
-    border: 3px rgb(75, 75, 75) solid;
+    border: 2px rgb(75, 75, 75) solid;
     border-radius: 10px;
     background: yellow;
-    cursor: pointer;
     font-family: 'Lato', sans-serif;
 }
 
@@ -30,46 +27,199 @@ body {
     transition: background-color .75s;
     color: black;
     transition: color, .75s;
-    border: 3px black solid;
+    border: 2px black solid;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    min-height: 75px;
+h1 {
+    font-size: 25px;
+    padding: 5px 0;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+}
+
+p {
+    text-align: center;
+    margin: 0 10px;
+}
+
+main {
+    padding-top: 10em;
+}
+
+/***** Header *****/
+
+#header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Lato', sans-serif;
     font-size: 1.25em;
+    background-color: white;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    position: fixed;
+    top: 0;
+    min-height: 77px;
+    width: 100%;
 }
+
+/*****NAV BAR*****/
+
+#nav-bar ul {
+    display: flex;
+    /*the ul is the flex container, the li are the flex items*/
+    margin: 25px;
+}
+
+#nav-bar li {
+    padding: 10px;
+    margin: 10px;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    transition: font-size .5s;
+    color: rgb(95, 95, 95);
+    text-shadow: 0 2px 5px gray;
+}
+
+#nav-bar a:visited {
+    color: rgb(95, 95, 95);
+}
+
+#nav-bar a:hover {
+    color: black;
+    font-size: 1.26em;
+}
+
+/* the > just means parent-child, so this only applies to images within the logo class */
+
+.logo>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    max-width: 200px;
+    margin-left: 50px;
+    /*this is just to allow room for the grading script menu*/
+}
+
+/*****EMAIL FORM*****/
+
+#subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+#subscribe form {
+    padding: 10px 0 0 0;
+}
+
+#email {
+    width: 300px;
+    height: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+}
+
+/*****OUR PRODUCTS*****/
+
+#our-products .btn {
+    margin: 10px 20px;
+}
+
+#our-products {
+    text-align: center;
+}
+
+#our-products li, h2 {
+    margin: 5px;
+}
+
+/*****THE LEATHER*****/
+
+#the-leather, p {
+    padding: 0 0 15px 0;
+}
+
+#video {
+    display: flex;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+/*****FEATURED*****/
+
+#featured {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.product-img {
+    border: 3px solid black;
+    border-radius: 15px;
+    height: 375px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 25px 5px;
+    padding: 0 15px;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
+.item-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.item-2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.item-3 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+/*****ABOUT US*****/
+
+#about-us .product-img {
+    display: block;
+    margin: auto;
+}
+
+/*****FOOTER*****/
 
 footer {
     position: relative;
     bottom: 0;
     min-height: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     padding: 0px 5px;
 }
 
-.logo {
-    width: 50vw;
-}
-
-/* the > just means parent-child, so this only applies to images within the logo class */
-
-.logo>img {
-    width: 100%;
-    height: 100%;
-    max-width: 200px;
+footer ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
-
-#subscribe {}
