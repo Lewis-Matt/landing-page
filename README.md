@@ -38,5 +38,10 @@
 
 ### Lessons Learned
 
-* 
+* Passed with 16/16 in codepen. Chrome/Firefox security features prevented the test script from recognizing everything and passed a 14/16
+* I need to spend more time learning about @media queries and the appropriate values for certain device classes (i.e. tablet, phone, etc)
+* I styled using mostly IDs when I should have been using classes
+* Experimented with animating the Navbar, happy with how it turned out
+* From a design standpoint; need a smaller logo (or the text needs to be to the right) in the Navbar.  Need to add more products to the featured section
+* Need to research on how to make grid item layout standard, rather than assign each individual li to a column/row
  
